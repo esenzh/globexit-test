@@ -7,36 +7,56 @@
     <title>Table</title>
   </head>
   <body>
-    <table>
-        <thead>
+    <div id="container">
+      <div>
+        <form action="" id="tableform">
+          <label for="color">Choose a color:</label>
+          <select id="color" name="colorlist" form="tableform">
+            <option value="volvo">red</option>
+            <option value="saab">blue</option>
+            <option value="opel">green</option>
+            <option value="audi">black</option>
+          </select>
+          <br>
+          <br>
+
+          <label for="cellnumber">Type cell number:</label>
+          <input type="text" id="cellnumber" min="1" max="12">
+        </form>
+      </div>
+      <div>
+        <table>
+          <thead>
             <tr>
-                <th>Country</th>
-                <th>Population</th>
-                <th>Area</th>
+              <th>Country</th>
+              <th>Population</th>
+              <th>Area</th>
             </tr>
-        </thead>
-      <tbody>
-        <tr>
-          <td>Россия</td>
-          <td>150m</td>
-          <td>17m m2</td>
-        </tr>
-        <tr>
-          <td>Великобритания</td>
-          <td>66m</td>
-          <td>242k m2</td>
-        </tr>
-        <tr>
-          <td>Германия</td>
-          <td>83m</td>
-          <td>357k m2</td>
-        </tr>
-        <tr>
-          <td>Малайзия</td>
-          <td>31m</td>
-          <td>329k m2</td>
-        </tr>
-      </tbody>
-    </table>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </body>
 </html>
