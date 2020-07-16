@@ -9,19 +9,22 @@
   <body>
     <div id="container">
       <div>
-        <form action="" id="tableform">
+        <form id="tableform">
           <label for="color">Choose a color:</label>
-          <select id="color" name="colorlist" form="tableform">
-            <option value="volvo">red</option>
-            <option value="saab">blue</option>
-            <option value="opel">green</option>
-            <option value="audi">black</option>
+          <select id="color" name="colorlist" form="tableform" required>
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
+            <option value="black">black</option>
           </select>
           <br>
           <br>
 
           <label for="cellnumber">Type cell number:</label>
-          <input type="text" id="cellnumber" min="1" max="12">
+          <input type="number" id="cellnumber" name='cellnumber' min="1" max="12" required>
+          <br>
+          <br>
+          <button type="submit">Save Changes</button>
         </form>
       </div>
       <div>
@@ -58,5 +61,7 @@
         </table>
       </div>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
