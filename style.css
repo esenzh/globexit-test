@@ -1,0 +1,11 @@
+table {
+    border: 3px solid #000000
+}
+
+table th, table td {
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+table tr:first-child td:nth-child(1){background-color: lightcoral; color: #fff;}
+table tr:first-child td:nth-child(2):hover{color: blue}
